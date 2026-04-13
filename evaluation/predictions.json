@@ -1,0 +1,2352 @@
+[
+  {
+    "file": "001_CWE-020_author_1_py.py",
+    "line": 10,
+    "category": "security",
+    "issue_type": "Unsafe YAML Deserialization",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 38922
+  },
+  {
+    "file": "001_CWE-020_author_1_py.py",
+    "line": 9,
+    "category": "maintainability",
+    "issue_type": "Missing error handling",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 38922
+  },
+  {
+    "file": "001_CWE-020_author_1_py.py",
+    "line": 9,
+    "category": "security",
+    "issue_type": "Path Traversal via Unsanitized Filename",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 38922
+  },
+  {
+    "file": "001_CWE-020_author_1_py.py",
+    "line": 5,
+    "category": "maintainability",
+    "issue_type": "Missing type hints",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 38922
+  },
+  {
+    "file": "001_CWE-020_author_1_py.py",
+    "line": 6,
+    "category": "maintainability",
+    "issue_type": "Incomplete docstring",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 38922
+  },
+  {
+    "file": "001_CWE-020_author_1_py.py",
+    "line": 9,
+    "category": "security",
+    "issue_type": "No Input Length / Resource Exhaustion Guard",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 38922
+  },
+  {
+    "file": "002_CWE-020_author_2_py.py",
+    "line": 8,
+    "category": "security",
+    "issue_type": "XML External Entity (XXE) Injection",
+    "severity": "high",
+    "agent": "security",
+    "confidence": 0.95,
+    "processing_time_ms": 44631
+  },
+  {
+    "file": "002_CWE-020_author_2_py.py",
+    "line": 1,
+    "category": "security",
+    "issue_type": "Insecure XML Parser Import",
+    "severity": "medium",
+    "agent": "security",
+    "confidence": 0.85,
+    "processing_time_ms": 44631
+  },
+  {
+    "file": "002_CWE-020_author_2_py.py",
+    "line": 7,
+    "category": "performance",
+    "issue_type": "Vulnerable XML parsing without security constraints",
+    "severity": "high",
+    "agent": "performance",
+    "confidence": 0.95,
+    "processing_time_ms": 44631
+  },
+  {
+    "file": "002_CWE-020_author_2_py.py",
+    "line": 5,
+    "category": "maintainability",
+    "issue_type": "Missing type hints",
+    "severity": "medium",
+    "agent": "maintainability",
+    "confidence": 0.95,
+    "processing_time_ms": 44631
+  },
+  {
+    "file": "002_CWE-020_author_2_py.py",
+    "line": 8,
+    "category": "maintainability",
+    "issue_type": "Incomplete error handling",
+    "severity": "high",
+    "agent": "maintainability",
+    "confidence": 0.9,
+    "processing_time_ms": 44631
+  },
+  {
+    "file": "002_CWE-020_author_2_py.py",
+    "line": 5,
+    "category": "maintainability",
+    "issue_type": "Overly simplistic function design",
+    "severity": "low",
+    "agent": "maintainability",
+    "confidence": 0.7,
+    "processing_time_ms": 44631
+  },
+  {
+    "file": "003_CWE-020_codeql_1_py.py",
+    "line": 10,
+    "category": "security",
+    "issue_type": "Cross-Site Scripting (XSS) - Reflected",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 41547
+  },
+  {
+    "file": "003_CWE-020_codeql_1_py.py",
+    "line": 10,
+    "category": "security",
+    "issue_type": "Potential Denial-of-Service via Unbounded Input (DoS)",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 41547
+  },
+  {
+    "file": "003_CWE-020_codeql_1_py.py",
+    "line": 9,
+    "category": "security",
+    "issue_type": "Improper Input Validation (CWE-20)",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 41547
+  },
+  {
+    "file": "003_CWE-020_codeql_1_py.py",
+    "line": 10,
+    "category": "security",
+    "issue_type": "NoneType propagation causing unhandled exception",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 41547
+  },
+  {
+    "file": "003_CWE-020_codeql_1_py.py",
+    "line": 5,
+    "category": "maintainability",
+    "issue_type": "Missing input validation documentation and inadequate docstring",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 41547
+  },
+  {
+    "file": "003_CWE-020_codeql_1_py.py",
+    "line": 5,
+    "category": "maintainability",
+    "issue_type": "Missing return type hint",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.8,
+    "processing_time_ms": 41547
+  },
+  {
+    "file": "003_CWE-020_codeql_1_py.py",
+    "line": 11,
+    "category": "maintainability",
+    "issue_type": "Unnecessary intermediate variable",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.75,
+    "processing_time_ms": 41547
+  },
+  {
+    "file": "004_CWE-020_codeql_2_py.py",
+    "line": 15,
+    "category": "security",
+    "issue_type": "Unsafe Deserialization (Pickle)",
+    "severity": "critical",
+    "agent": "security",
+    "confidence": 0.99,
+    "processing_time_ms": 53498
+  },
+  {
+    "file": "004_CWE-020_codeql_2_py.py",
+    "line": 12,
+    "category": "security",
+    "issue_type": "Improper Input Validation",
+    "severity": "high",
+    "agent": "security",
+    "confidence": 0.85,
+    "processing_time_ms": 53498
+  },
+  {
+    "file": "004_CWE-020_codeql_2_py.py",
+    "line": 12,
+    "category": "security",
+    "issue_type": "Lack of Error Handling",
+    "severity": "medium",
+    "agent": "security",
+    "confidence": 0.8,
+    "processing_time_ms": 53498
+  },
+  {
+    "file": "004_CWE-020_codeql_2_py.py",
+    "line": 13,
+    "category": "performance",
+    "issue_type": "Inefficient string encoding in request processing",
+    "severity": "medium",
+    "agent": "performance",
+    "confidence": 0.72,
+    "processing_time_ms": 53498
+  },
+  {
+    "file": "004_CWE-020_codeql_2_py.py",
+    "line": 8,
+    "category": "maintainability",
+    "issue_type": "Missing type hints",
+    "severity": "medium",
+    "agent": "maintainability",
+    "confidence": 0.85,
+    "processing_time_ms": 53498
+  },
+  {
+    "file": "004_CWE-020_codeql_2_py.py",
+    "line": 14,
+    "category": "maintainability",
+    "issue_type": "Missing null/error handling",
+    "severity": "high",
+    "agent": "maintainability",
+    "confidence": 0.9,
+    "processing_time_ms": 53498
+  },
+  {
+    "file": "004_CWE-020_codeql_2_py.py",
+    "line": 16,
+    "category": "maintainability",
+    "issue_type": "Inadequate error handling for deserialization",
+    "severity": "high",
+    "agent": "maintainability",
+    "confidence": 0.85,
+    "processing_time_ms": 53498
+  },
+  {
+    "file": "004_CWE-020_codeql_2_py.py",
+    "line": 14,
+    "category": "maintainability",
+    "issue_type": "Unclear variable naming",
+    "severity": "low",
+    "agent": "maintainability",
+    "confidence": 0.75,
+    "processing_time_ms": 53498
+  },
+  {
+    "file": "004_CWE-020_codeql_2_py.py",
+    "line": 9,
+    "category": "maintainability",
+    "issue_type": "Incomplete docstring",
+    "severity": "medium",
+    "agent": "maintainability",
+    "confidence": 0.8,
+    "processing_time_ms": 53498
+  },
+  {
+    "file": "005_CWE-020_codeql_3_py.py",
+    "line": 17,
+    "category": "security",
+    "issue_type": "Open Redirect via Insufficient URL Validation",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 1.0,
+    "processing_time_ms": 59527
+  },
+  {
+    "file": "005_CWE-020_codeql_3_py.py",
+    "line": 17,
+    "category": "security",
+    "issue_type": "Incomplete URL Scheme Validation",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 59527
+  },
+  {
+    "file": "005_CWE-020_codeql_3_py.py",
+    "line": 12,
+    "category": "maintainability",
+    "issue_type": "Missing None check for optional parameter",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 59527
+  },
+  {
+    "file": "005_CWE-020_codeql_3_py.py",
+    "line": 14,
+    "category": "security",
+    "issue_type": "Improper Regex Construction - Unescaped Dot Metacharacter",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.75,
+    "processing_time_ms": 59527
+  },
+  {
+    "file": "005_CWE-020_codeql_3_py.py",
+    "line": 12,
+    "category": "security",
+    "issue_type": "Potential DoS via Unbounded Input Length",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.75,
+    "processing_time_ms": 59527
+  },
+  {
+    "file": "005_CWE-020_codeql_3_py.py",
+    "line": 14,
+    "category": "performance",
+    "issue_type": "Regex Recompiled on Every Request",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.75,
+    "processing_time_ms": 59527
+  },
+  {
+    "file": "005_CWE-020_codeql_3_py.py",
+    "line": 13,
+    "category": "maintainability",
+    "issue_type": "Hardcoded Magic String / Missing Named Constant",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.8,
+    "processing_time_ms": 59527
+  },
+  {
+    "file": "005_CWE-020_codeql_3_py.py",
+    "line": 8,
+    "category": "maintainability",
+    "issue_type": "Missing Type Hints",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.8,
+    "processing_time_ms": 59527
+  },
+  {
+    "file": "005_CWE-020_codeql_3_py.py",
+    "line": 8,
+    "category": "maintainability",
+    "issue_type": "Insufficient Docstring",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 59527
+  },
+  {
+    "file": "005_CWE-020_codeql_3_py.py",
+    "line": 17,
+    "category": "security",
+    "issue_type": "URL Authority Confusion / Credential Injection in URL",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 59527
+  },
+  {
+    "file": "006_CWE-020_codeql_4_py.py",
+    "line": 13,
+    "category": "security",
+    "issue_type": "Open Redirect (CWE-601)",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 59003
+  },
+  {
+    "file": "006_CWE-020_codeql_4_py.py",
+    "line": 11,
+    "category": "security",
+    "issue_type": "Missing Input Length Limit / Denial-of-Service via Long URL",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 59003
+  },
+  {
+    "file": "006_CWE-020_codeql_4_py.py",
+    "line": 5,
+    "category": "security",
+    "issue_type": "Missing Rate Limiting on Public Redirect Endpoint",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 59003
+  },
+  {
+    "file": "006_CWE-020_codeql_4_py.py",
+    "line": 10,
+    "category": "performance",
+    "issue_type": "Inefficient substring search instead of structured URL parsing",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.65,
+    "processing_time_ms": 59003
+  },
+  {
+    "file": "006_CWE-020_codeql_4_py.py",
+    "line": 10,
+    "category": "maintainability",
+    "issue_type": "Magic string for allowed domain",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 59003
+  },
+  {
+    "file": "006_CWE-020_codeql_4_py.py",
+    "line": 10,
+    "category": "maintainability",
+    "issue_type": "Inconsistent return types",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.8,
+    "processing_time_ms": 59003
+  },
+  {
+    "file": "006_CWE-020_codeql_4_py.py",
+    "line": 6,
+    "category": "maintainability",
+    "issue_type": "Missing type hints on function",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 59003
+  },
+  {
+    "file": "006_CWE-020_codeql_4_py.py",
+    "line": 6,
+    "category": "maintainability",
+    "issue_type": "Poor naming convention (camelCase function name)",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 59003
+  },
+  {
+    "file": "006_CWE-020_codeql_4_py.py",
+    "line": 9,
+    "category": "maintainability",
+    "issue_type": "Missing explicit empty-target check",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.75,
+    "processing_time_ms": 59003
+  },
+  {
+    "file": "006_CWE-020_codeql_4_py.py",
+    "line": 5,
+    "category": "maintainability",
+    "issue_type": "Missing route documentation (query params and response codes)",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.7,
+    "processing_time_ms": 59003
+  },
+  {
+    "file": "007_CWE-022_author_1_py.py",
+    "line": 13,
+    "category": "security",
+    "issue_type": "Path Traversal (CWE-022)",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 1.0,
+    "processing_time_ms": 48060
+  },
+  {
+    "file": "007_CWE-022_author_1_py.py",
+    "line": 13,
+    "category": "security",
+    "issue_type": "Null dereference / unvalidated None passed to os.remove()",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 48060
+  },
+  {
+    "file": "007_CWE-022_author_1_py.py",
+    "line": 13,
+    "category": "maintainability",
+    "issue_type": "Missing error handling",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 48060
+  },
+  {
+    "file": "007_CWE-022_author_1_py.py",
+    "line": 8,
+    "category": "maintainability",
+    "issue_type": "Misleading docstring \u2014 claims validation occurs but none is implemented",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 48060
+  },
+  {
+    "file": "007_CWE-022_author_1_py.py",
+    "line": 10,
+    "category": "maintainability",
+    "issue_type": "Missing parameter documentation",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 48060
+  },
+  {
+    "file": "007_CWE-022_author_1_py.py",
+    "line": 6,
+    "category": "security",
+    "issue_type": "Missing rate limiting \u2014 potential DoS via repeated file deletion requests",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 48060
+  },
+  {
+    "file": "007_CWE-022_author_1_py.py",
+    "line": 6,
+    "category": "security",
+    "issue_type": "Missing authentication/authorization on destructive endpoint",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 48060
+  },
+  {
+    "file": "007_CWE-022_author_1_py.py",
+    "line": 7,
+    "category": "maintainability",
+    "issue_type": "Inaccurate function name",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.75,
+    "processing_time_ms": 48060
+  },
+  {
+    "file": "008_CWE-022_author_2_py.py",
+    "line": 3,
+    "category": "security",
+    "issue_type": "Server-Side Request Forgery (SSRF) / Path Traversal via unvalidated URL input",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 36268
+  },
+  {
+    "file": "008_CWE-022_author_2_py.py",
+    "line": 8,
+    "category": "maintainability",
+    "issue_type": "Incomplete error handling",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.92,
+    "processing_time_ms": 36268
+  },
+  {
+    "file": "008_CWE-022_author_2_py.py",
+    "line": 8,
+    "category": "performance",
+    "issue_type": "Unbounded network I/O without timeout",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 36268
+  },
+  {
+    "file": "008_CWE-022_author_2_py.py",
+    "line": 9,
+    "category": "performance",
+    "issue_type": "Missing resource cleanup / Large response buffering without streaming",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 36268
+  },
+  {
+    "file": "008_CWE-022_author_2_py.py",
+    "line": 3,
+    "category": "maintainability",
+    "issue_type": "Missing type hints",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 36268
+  },
+  {
+    "file": "009_CWE-022_codeql_1_py.py",
+    "line": 11,
+    "category": "security",
+    "issue_type": "Path Traversal (CWE-022)",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 0.99,
+    "processing_time_ms": 59251
+  },
+  {
+    "file": "009_CWE-022_codeql_1_py.py",
+    "line": 10,
+    "category": "security",
+    "issue_type": "Missing Input Validation",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.98,
+    "processing_time_ms": 59251
+  },
+  {
+    "file": "009_CWE-022_codeql_1_py.py",
+    "line": 11,
+    "category": "performance",
+    "issue_type": "Unbounded memory allocation - no size limit on file reads",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.97,
+    "processing_time_ms": 59251
+  },
+  {
+    "file": "009_CWE-022_codeql_1_py.py",
+    "line": 11,
+    "category": "performance",
+    "issue_type": "Resource leak - unclosed file handle",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.98,
+    "processing_time_ms": 59251
+  },
+  {
+    "file": "009_CWE-022_codeql_1_py.py",
+    "line": 11,
+    "category": "security",
+    "issue_type": "Missing error handling - information disclosure via exception messages",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.5,
+    "processing_time_ms": 59251
+  },
+  {
+    "file": "009_CWE-022_codeql_1_py.py",
+    "line": 4,
+    "category": "security",
+    "issue_type": "Missing rate limiting / DoS protection",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 59251
+  },
+  {
+    "file": "009_CWE-022_codeql_1_py.py",
+    "line": 6,
+    "category": "maintainability",
+    "issue_type": "Misleading docstring - claims validation that does not exist",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.5,
+    "processing_time_ms": 59251
+  },
+  {
+    "file": "010_CWE-022_codeql_2_py.py",
+    "line": 11,
+    "category": "security",
+    "issue_type": "Path Traversal / Directory Traversal (CWE-022)",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 1.0,
+    "processing_time_ms": 60065
+  },
+  {
+    "file": "010_CWE-022_codeql_2_py.py",
+    "line": 9,
+    "category": "performance",
+    "issue_type": "No resource limits on tar extraction (Zip/Tar Bomb)",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.88,
+    "processing_time_ms": 60065
+  },
+  {
+    "file": "010_CWE-022_codeql_2_py.py",
+    "line": 11,
+    "category": "security",
+    "issue_type": "Insecure Temporary Directory (World-Writable /tmp/)",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.92,
+    "processing_time_ms": 60065
+  },
+  {
+    "file": "010_CWE-022_codeql_2_py.py",
+    "line": 11,
+    "category": "security",
+    "issue_type": "Use of Deprecated tarfile.extract() without filter parameter (Python 3.12+)",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 60065
+  },
+  {
+    "file": "010_CWE-022_codeql_2_py.py",
+    "line": 3,
+    "category": "maintainability",
+    "issue_type": "Missing type hints (parameter and return type)",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 60065
+  },
+  {
+    "file": "010_CWE-022_codeql_2_py.py",
+    "line": 4,
+    "category": "maintainability",
+    "issue_type": "Incomplete docstring",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.88,
+    "processing_time_ms": 60065
+  },
+  {
+    "file": "010_CWE-022_codeql_2_py.py",
+    "line": 11,
+    "category": "maintainability",
+    "issue_type": "Magic string constant for extraction path",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 60065
+  },
+  {
+    "file": "011_CWE-078_author_1_py.py",
+    "line": 8,
+    "category": "security",
+    "issue_type": "OS Command Injection (CWE-78)",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 1.0,
+    "processing_time_ms": 49220
+  },
+  {
+    "file": "011_CWE-078_author_1_py.py",
+    "line": 8,
+    "category": "security",
+    "issue_type": "shell=True Without Necessity",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.98,
+    "processing_time_ms": 49220
+  },
+  {
+    "file": "011_CWE-078_author_1_py.py",
+    "line": 6,
+    "category": "security",
+    "issue_type": "Improper Input Validation \u2014 Validation Promised But Absent",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 49220
+  },
+  {
+    "file": "011_CWE-078_author_1_py.py",
+    "line": 8,
+    "category": "security",
+    "issue_type": "Denial of Service via Blocking subprocess Without Timeout",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 49220
+  },
+  {
+    "file": "011_CWE-078_author_1_py.py",
+    "line": 4,
+    "category": "maintainability",
+    "issue_type": "Misleading Docstring \u2014 Contract Mismatch",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.98,
+    "processing_time_ms": 49220
+  },
+  {
+    "file": "011_CWE-078_author_1_py.py",
+    "line": 4,
+    "category": "maintainability",
+    "issue_type": "Incomplete Function Documentation",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 49220
+  },
+  {
+    "file": "011_CWE-078_author_1_py.py",
+    "line": 6,
+    "category": "security",
+    "issue_type": "Missing Input Length Limit",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 49220
+  },
+  {
+    "file": "012_CWE-078_codeql_1_py.py",
+    "line": 12,
+    "category": "security",
+    "issue_type": "Command Injection (CWE-78)",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 1.0,
+    "processing_time_ms": 48901
+  },
+  {
+    "file": "012_CWE-078_codeql_1_py.py",
+    "line": 11,
+    "category": "security",
+    "issue_type": "Missing Input Validation / False Docstring Contract",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 48901
+  },
+  {
+    "file": "012_CWE-078_codeql_1_py.py",
+    "line": 5,
+    "category": "security",
+    "issue_type": "Missing Rate Limiting",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 48901
+  },
+  {
+    "file": "012_CWE-078_codeql_1_py.py",
+    "line": 12,
+    "category": "maintainability",
+    "issue_type": "HTTP Method / Parameter Mismatch",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.88,
+    "processing_time_ms": 48901
+  },
+  {
+    "file": "012_CWE-078_codeql_1_py.py",
+    "line": 13,
+    "category": "maintainability",
+    "issue_type": "Missing Error Handling",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.92,
+    "processing_time_ms": 48901
+  },
+  {
+    "file": "012_CWE-078_codeql_1_py.py",
+    "line": 6,
+    "category": "maintainability",
+    "issue_type": "Misleading Function Name / PEP 8 Violation",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 48901
+  },
+  {
+    "file": "012_CWE-078_codeql_1_py.py",
+    "line": 7,
+    "category": "maintainability",
+    "issue_type": "Incomplete / Misleading Docstring",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 48901
+  },
+  {
+    "file": "013_CWE-079_codeql_1_py.py",
+    "line": 13,
+    "category": "security",
+    "issue_type": "Cross-Site Scripting (XSS)",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 45870
+  },
+  {
+    "file": "013_CWE-079_codeql_1_py.py",
+    "line": 12,
+    "category": "security",
+    "issue_type": "Missing input length limit (potential DoS)",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 45870
+  },
+  {
+    "file": "013_CWE-079_codeql_1_py.py",
+    "line": 13,
+    "category": "performance",
+    "issue_type": "Repeated Environment and template initialization per request",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 45870
+  },
+  {
+    "file": "013_CWE-079_codeql_1_py.py",
+    "line": 12,
+    "category": "maintainability",
+    "issue_type": "Missing input validation",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.65,
+    "processing_time_ms": 45870
+  },
+  {
+    "file": "013_CWE-079_codeql_1_py.py",
+    "line": 13,
+    "category": "maintainability",
+    "issue_type": "Poor separation of concerns",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 45870
+  },
+  {
+    "file": "013_CWE-079_codeql_1_py.py",
+    "line": 13,
+    "category": "maintainability",
+    "issue_type": "Magic string \u2014 template directory",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.75,
+    "processing_time_ms": 45870
+  },
+  {
+    "file": "013_CWE-079_codeql_1_py.py",
+    "line": 14,
+    "category": "maintainability",
+    "issue_type": "Magic string \u2014 template filename",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.7,
+    "processing_time_ms": 45870
+  },
+  {
+    "file": "013_CWE-079_codeql_1_py.py",
+    "line": 1,
+    "category": "maintainability",
+    "issue_type": "Missing module-level docstring",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.6,
+    "processing_time_ms": 45870
+  },
+  {
+    "file": "014_CWE-079_codeql_2_py.py",
+    "line": 11,
+    "category": "security",
+    "issue_type": "Cross-Site Scripting (XSS)",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 42501
+  },
+  {
+    "file": "014_CWE-079_codeql_2_py.py",
+    "line": 10,
+    "category": "maintainability",
+    "issue_type": "Misleading variable name shadowing built-in/function name",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 42501
+  },
+  {
+    "file": "014_CWE-079_codeql_2_py.py",
+    "line": 8,
+    "category": "maintainability",
+    "issue_type": "Incomplete/misleading docstring \u2014 claims validation occurs but none exists",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.88,
+    "processing_time_ms": 42501
+  },
+  {
+    "file": "014_CWE-079_codeql_2_py.py",
+    "line": 7,
+    "category": "maintainability",
+    "issue_type": "Missing return type hint",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 42501
+  },
+  {
+    "file": "014_CWE-079_codeql_2_py.py",
+    "line": 12,
+    "category": "security",
+    "issue_type": "Missing Content-Type header \u2014 response defaults to text/html enabling XSS",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 42501
+  },
+  {
+    "file": "014_CWE-079_codeql_2_py.py",
+    "line": 10,
+    "category": "security",
+    "issue_type": "Missing input length validation \u2014 potential DoS via large payloads",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 42501
+  },
+  {
+    "file": "014_CWE-079_codeql_2_py.py",
+    "line": 11,
+    "category": "maintainability",
+    "issue_type": "String concatenation instead of f-string",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.75,
+    "processing_time_ms": 42501
+  },
+  {
+    "file": "015_CWE-079_sonar_1_py.py",
+    "line": 14,
+    "category": "security",
+    "issue_type": "Cross-Site Scripting (XSS)",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 1.0,
+    "processing_time_ms": 49952
+  },
+  {
+    "file": "015_CWE-079_sonar_1_py.py",
+    "line": 12,
+    "category": "security",
+    "issue_type": "Missing Input Length Validation",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 49952
+  },
+  {
+    "file": "015_CWE-079_sonar_1_py.py",
+    "line": 13,
+    "category": "performance",
+    "issue_type": "File I/O on every request without caching",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 49952
+  },
+  {
+    "file": "015_CWE-079_sonar_1_py.py",
+    "line": 13,
+    "category": "security",
+    "issue_type": "Resource leak - file handle not closed",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 1.0,
+    "processing_time_ms": 49952
+  },
+  {
+    "file": "015_CWE-079_sonar_1_py.py",
+    "line": 13,
+    "category": "maintainability",
+    "issue_type": "Missing error handling for file I/O",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 49952
+  },
+  {
+    "file": "015_CWE-079_sonar_1_py.py",
+    "line": 14,
+    "category": "performance",
+    "issue_type": "String replacement inefficiency per request",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.75,
+    "processing_time_ms": 49952
+  },
+  {
+    "file": "015_CWE-079_sonar_1_py.py",
+    "line": 13,
+    "category": "maintainability",
+    "issue_type": "Magic string - hardcoded file path",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.8,
+    "processing_time_ms": 49952
+  },
+  {
+    "file": "015_CWE-079_sonar_1_py.py",
+    "line": 6,
+    "category": "maintainability",
+    "issue_type": "Missing type hints",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 49952
+  },
+  {
+    "file": "015_CWE-079_sonar_1_py.py",
+    "line": 6,
+    "category": "maintainability",
+    "issue_type": "Poor function naming (non-PEP8)",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 49952
+  },
+  {
+    "file": "015_CWE-079_sonar_1_py.py",
+    "line": 5,
+    "category": "maintainability",
+    "issue_type": "Inconsistent spacing in decorator keyword argument",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 49952
+  },
+  {
+    "file": "016_CWE-080_author_1_py.py",
+    "line": 12,
+    "category": "security",
+    "issue_type": "Cross-Site Scripting (XSS)",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.99,
+    "processing_time_ms": 38481
+  },
+  {
+    "file": "016_CWE-080_author_1_py.py",
+    "line": 11,
+    "category": "security",
+    "issue_type": "Missing input length validation / potential DoS",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 38481
+  },
+  {
+    "file": "016_CWE-080_author_1_py.py",
+    "line": 12,
+    "category": "maintainability",
+    "issue_type": "Magic string / HTML hardcoded in business logic",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 38481
+  },
+  {
+    "file": "016_CWE-080_author_1_py.py",
+    "line": 5,
+    "category": "maintainability",
+    "issue_type": "Missing type hints",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 38481
+  },
+  {
+    "file": "016_CWE-080_author_1_py.py",
+    "line": 5,
+    "category": "maintainability",
+    "issue_type": "Inconsistent naming convention (PEP 8 violation)",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 38481
+  },
+  {
+    "file": "017_CWE-089_author_1_py.py",
+    "line": 16,
+    "category": "security",
+    "issue_type": "SQL Injection",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 1.0,
+    "processing_time_ms": 64457
+  },
+  {
+    "file": "017_CWE-089_author_1_py.py",
+    "line": 16,
+    "category": "security",
+    "issue_type": "Missing Transaction Commit \u2014 Silent Data Loss",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 64457
+  },
+  {
+    "file": "017_CWE-089_author_1_py.py",
+    "line": 15,
+    "category": "security",
+    "issue_type": "Dangling Connection Reference Causes Connection Leak",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 64457
+  },
+  {
+    "file": "017_CWE-089_author_1_py.py",
+    "line": 8,
+    "category": "security",
+    "issue_type": "Hardcoded Empty Credentials",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 64457
+  },
+  {
+    "file": "017_CWE-089_author_1_py.py",
+    "line": 11,
+    "category": "security",
+    "issue_type": "Missing Input Validation",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 64457
+  },
+  {
+    "file": "017_CWE-089_author_1_py.py",
+    "line": 15,
+    "category": "security",
+    "issue_type": "Missing Error Handling and Connection Management",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 64457
+  },
+  {
+    "file": "017_CWE-089_author_1_py.py",
+    "line": 8,
+    "category": "performance",
+    "issue_type": "Repeated Connection Instantiation Without Pooling",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 64457
+  },
+  {
+    "file": "017_CWE-089_author_1_py.py",
+    "line": 6,
+    "category": "maintainability",
+    "issue_type": "Missing Type Hints",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 64457
+  },
+  {
+    "file": "017_CWE-089_author_1_py.py",
+    "line": 12,
+    "category": "maintainability",
+    "issue_type": "Incomplete Docstrings",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 64457
+  },
+  {
+    "file": "018_CWE-089_codeql_1_py.py",
+    "line": 16,
+    "category": "security",
+    "issue_type": "SQL Injection",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 0.99,
+    "processing_time_ms": 55743
+  },
+  {
+    "file": "018_CWE-089_codeql_1_py.py",
+    "line": 15,
+    "category": "security",
+    "issue_type": "Resource Leak / Connection Exhaustion enabling DoS",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 1.0,
+    "processing_time_ms": 55743
+  },
+  {
+    "file": "018_CWE-089_codeql_1_py.py",
+    "line": 7,
+    "category": "security",
+    "issue_type": "Hardcoded Credentials",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 55743
+  },
+  {
+    "file": "018_CWE-089_codeql_1_py.py",
+    "line": 14,
+    "category": "performance",
+    "issue_type": "No connection pooling \u2014 creates new connection per call",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 55743
+  },
+  {
+    "file": "018_CWE-089_codeql_1_py.py",
+    "line": 5,
+    "category": "maintainability",
+    "issue_type": "Missing error handling in get_connection and show_user",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 55743
+  },
+  {
+    "file": "018_CWE-089_codeql_1_py.py",
+    "line": 10,
+    "category": "security",
+    "issue_type": "Missing input validation \u2014 None/empty username bypasses query intent",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 55743
+  },
+  {
+    "file": "018_CWE-089_codeql_1_py.py",
+    "line": 13,
+    "category": "maintainability",
+    "issue_type": "Missing type hints and inadequate docstrings",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 55743
+  },
+  {
+    "file": "018_CWE-089_codeql_1_py.py",
+    "line": 7,
+    "category": "maintainability",
+    "issue_type": "Inconsistent PEP 8 formatting \u2014 spaces around keyword arguments",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.7,
+    "processing_time_ms": 55743
+  },
+  {
+    "file": "019_CWE-090_codeql_1_py.py",
+    "line": 17,
+    "category": "security",
+    "issue_type": "LDAP Injection via search filter",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 0.99,
+    "processing_time_ms": 79200
+  },
+  {
+    "file": "019_CWE-090_codeql_1_py.py",
+    "line": 16,
+    "category": "security",
+    "issue_type": "LDAP Injection via Distinguished Name",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 0.99,
+    "processing_time_ms": 79200
+  },
+  {
+    "file": "019_CWE-090_codeql_1_py.py",
+    "line": 20,
+    "category": "security",
+    "issue_type": "DoS via Unbounded LDAP Result Set (amplified by injection)",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 79200
+  },
+  {
+    "file": "019_CWE-090_codeql_1_py.py",
+    "line": 14,
+    "category": "security",
+    "issue_type": "Missing Input Validation / No Error Handling on Missing Parameters",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 79200
+  },
+  {
+    "file": "019_CWE-090_codeql_1_py.py",
+    "line": 19,
+    "category": "performance",
+    "issue_type": "No connection pooling \u2014 new LDAP connection per request",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.98,
+    "processing_time_ms": 79200
+  },
+  {
+    "file": "019_CWE-090_codeql_1_py.py",
+    "line": 20,
+    "category": "performance",
+    "issue_type": "Blocking synchronous LDAP call with no timeout",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 79200
+  },
+  {
+    "file": "019_CWE-090_codeql_1_py.py",
+    "line": 19,
+    "category": "maintainability",
+    "issue_type": "Missing exception handling for LDAP operations",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 79200
+  },
+  {
+    "file": "019_CWE-090_codeql_1_py.py",
+    "line": 19,
+    "category": "maintainability",
+    "issue_type": "Hardcoded LDAP server URL (magic string)",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 79200
+  },
+  {
+    "file": "019_CWE-090_codeql_1_py.py",
+    "line": 10,
+    "category": "maintainability",
+    "issue_type": "Poor separation of concerns \u2014 LDAP logic in route handler",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 79200
+  },
+  {
+    "file": "019_CWE-090_codeql_1_py.py",
+    "line": 10,
+    "category": "maintainability",
+    "issue_type": "Missing type hints on route function",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 79200
+  },
+  {
+    "file": "019_CWE-090_codeql_1_py.py",
+    "line": 10,
+    "category": "security",
+    "issue_type": "Missing rate limiting \u2014 brute-force / enumeration risk",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.5,
+    "processing_time_ms": 79200
+  },
+  {
+    "file": "020_CWE-090_codeql_2_py.py",
+    "line": 18,
+    "category": "security",
+    "issue_type": "LDAP Injection via search filter",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 0.99,
+    "processing_time_ms": 65291
+  },
+  {
+    "file": "020_CWE-090_codeql_2_py.py",
+    "line": 16,
+    "category": "security",
+    "issue_type": "LDAP Injection via Distinguished Name",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 0.98,
+    "processing_time_ms": 65291
+  },
+  {
+    "file": "020_CWE-090_codeql_2_py.py",
+    "line": 20,
+    "category": "security",
+    "issue_type": "Unauthenticated LDAP binding with user-controlled DN",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 65291
+  },
+  {
+    "file": "020_CWE-090_codeql_2_py.py",
+    "line": 14,
+    "category": "security",
+    "issue_type": "Missing input length limits enabling DoS",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.7,
+    "processing_time_ms": 65291
+  },
+  {
+    "file": "020_CWE-090_codeql_2_py.py",
+    "line": 14,
+    "category": "maintainability",
+    "issue_type": "No error handling for missing request parameters",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 65291
+  },
+  {
+    "file": "020_CWE-090_codeql_2_py.py",
+    "line": 19,
+    "category": "maintainability",
+    "issue_type": "Missing exception handling for LDAP operations",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.92,
+    "processing_time_ms": 65291
+  },
+  {
+    "file": "020_CWE-090_codeql_2_py.py",
+    "line": 20,
+    "category": "performance",
+    "issue_type": "Missing connection lifecycle management / connection leak",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 65291
+  },
+  {
+    "file": "020_CWE-090_codeql_2_py.py",
+    "line": 19,
+    "category": "performance",
+    "issue_type": "New LDAP connection created per request with no pooling",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.92,
+    "processing_time_ms": 65291
+  },
+  {
+    "file": "020_CWE-090_codeql_2_py.py",
+    "line": 19,
+    "category": "maintainability",
+    "issue_type": "Magic string constants should be defined as module constants",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 65291
+  },
+  {
+    "file": "020_CWE-090_codeql_2_py.py",
+    "line": 21,
+    "category": "maintainability",
+    "issue_type": "No Flask error response status codes",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.8,
+    "processing_time_ms": 65291
+  },
+  {
+    "file": "020_CWE-090_codeql_2_py.py",
+    "line": 7,
+    "category": "maintainability",
+    "issue_type": "Incomplete return type information and missing type hints",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.8,
+    "processing_time_ms": 65291
+  },
+  {
+    "file": "021_js_security_1.js",
+    "line": 6,
+    "category": "security",
+    "issue_type": "SQL Injection",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 1.0,
+    "processing_time_ms": 67022
+  },
+  {
+    "file": "021_js_security_1.js",
+    "line": 5,
+    "category": "maintainability",
+    "issue_type": "Missing input validation",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 67022
+  },
+  {
+    "file": "021_js_security_1.js",
+    "line": 6,
+    "category": "performance",
+    "issue_type": "Unbounded database result set - no pagination or result limit",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 67022
+  },
+  {
+    "file": "021_js_security_1.js",
+    "line": 5,
+    "category": "performance",
+    "issue_type": "No database connection pooling",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.75,
+    "processing_time_ms": 67022
+  },
+  {
+    "file": "021_js_security_1.js",
+    "line": 4,
+    "category": "maintainability",
+    "issue_type": "Missing error handling for database connection",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 67022
+  },
+  {
+    "file": "021_js_security_1.js",
+    "line": 9,
+    "category": "maintainability",
+    "issue_type": "No error logging",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.8,
+    "processing_time_ms": 67022
+  },
+  {
+    "file": "021_js_security_1.js",
+    "line": 7,
+    "category": "performance",
+    "issue_type": "No request timeout handling on database operation",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.7,
+    "processing_time_ms": 67022
+  },
+  {
+    "file": "021_js_security_1.js",
+    "line": 13,
+    "category": "maintainability",
+    "issue_type": "Missing configuration management / hardcoded port",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.8,
+    "processing_time_ms": 67022
+  },
+  {
+    "file": "021_js_security_1.js",
+    "line": 4,
+    "category": "security",
+    "issue_type": "Missing rate limiting \u2014 enables brute force and DoS amplification",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 67022
+  },
+  {
+    "file": "021_js_security_1.js",
+    "line": 6,
+    "category": "security",
+    "issue_type": "Sensitive data over-exposure via SELECT *",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 67022
+  },
+  {
+    "file": "021_js_security_1.js",
+    "line": 4,
+    "category": "maintainability",
+    "issue_type": "Missing docstring/comments",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.75,
+    "processing_time_ms": 67022
+  },
+  {
+    "file": "022_js_security_2.js",
+    "line": 7,
+    "category": "security",
+    "issue_type": "OS Command Injection",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 0.99,
+    "processing_time_ms": 58529
+  },
+  {
+    "file": "022_js_security_2.js",
+    "line": 6,
+    "category": "security",
+    "issue_type": "Improper Input Validation",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 58529
+  },
+  {
+    "file": "022_js_security_2.js",
+    "line": 7,
+    "category": "performance",
+    "issue_type": "Unbounded child process execution enabling DoS",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.92,
+    "processing_time_ms": 58529
+  },
+  {
+    "file": "022_js_security_2.js",
+    "line": 9,
+    "category": "security",
+    "issue_type": "Information Leakage via stderr in Error Response",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 58529
+  },
+  {
+    "file": "022_js_security_2.js",
+    "line": 5,
+    "category": "security",
+    "issue_type": "Missing Rate Limiting",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 58529
+  },
+  {
+    "file": "022_js_security_2.js",
+    "line": 5,
+    "category": "maintainability",
+    "issue_type": "Missing function documentation",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 58529
+  },
+  {
+    "file": "022_js_security_2.js",
+    "line": 8,
+    "category": "maintainability",
+    "issue_type": "Missing error handling clarity and raw stderr exposure",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.8,
+    "processing_time_ms": 58529
+  },
+  {
+    "file": "022_js_security_2.js",
+    "line": 12,
+    "category": "maintainability",
+    "issue_type": "Hardcoded port number",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.75,
+    "processing_time_ms": 58529
+  },
+  {
+    "file": "022_js_security_2.js",
+    "line": 7,
+    "category": "maintainability",
+    "issue_type": "Magic number for ping packet count",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.7,
+    "processing_time_ms": 58529
+  },
+  {
+    "file": "022_js_security_2.js",
+    "line": 7,
+    "category": "performance",
+    "issue_type": "String concatenation in hot path",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.65,
+    "processing_time_ms": 58529
+  },
+  {
+    "file": "023_js_security_3.js",
+    "line": 8,
+    "category": "security",
+    "issue_type": "Path Traversal / Directory Traversal",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 0.99,
+    "processing_time_ms": 72307
+  },
+  {
+    "file": "023_js_security_3.js",
+    "line": 9,
+    "category": "performance",
+    "issue_type": "Blocking I/O in request handler (synchronous readFileSync)",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 0.99,
+    "processing_time_ms": 72307
+  },
+  {
+    "file": "023_js_security_3.js",
+    "line": 7,
+    "category": "security",
+    "issue_type": "Missing Input Validation / Unhandled Null Input",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 72307
+  },
+  {
+    "file": "023_js_security_3.js",
+    "line": 9,
+    "category": "security",
+    "issue_type": "Unhandled Exception / Information Disclosure via Stack Trace",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.98,
+    "processing_time_ms": 72307
+  },
+  {
+    "file": "023_js_security_3.js",
+    "line": 9,
+    "category": "security",
+    "issue_type": "Denial of Service via Large File / Unbounded Memory Consumption",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 72307
+  },
+  {
+    "file": "023_js_security_3.js",
+    "line": 6,
+    "category": "security",
+    "issue_type": "Missing Rate Limiting",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 72307
+  },
+  {
+    "file": "023_js_security_3.js",
+    "line": 9,
+    "category": "maintainability",
+    "issue_type": "Missing error handling",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.75,
+    "processing_time_ms": 72307
+  },
+  {
+    "file": "023_js_security_3.js",
+    "line": 6,
+    "category": "maintainability",
+    "issue_type": "Missing docstring/comments",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.75,
+    "processing_time_ms": 72307
+  },
+  {
+    "file": "023_js_security_3.js",
+    "line": 9,
+    "category": "maintainability",
+    "issue_type": "Synchronous I/O in web handler (code style/pattern)",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.8,
+    "processing_time_ms": 72307
+  },
+  {
+    "file": "023_js_security_3.js",
+    "line": 1,
+    "category": "maintainability",
+    "issue_type": "Missing application documentation",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.65,
+    "processing_time_ms": 72307
+  },
+  {
+    "file": "023_js_security_3.js",
+    "line": 7,
+    "category": "maintainability",
+    "issue_type": "Poor naming - ambiguous variable origin",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.65,
+    "processing_time_ms": 72307
+  },
+  {
+    "file": "024_js_security_4.js",
+    "line": 6,
+    "category": "security",
+    "issue_type": "Cross-Site Scripting (XSS)",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 0.99,
+    "processing_time_ms": 34028
+  },
+  {
+    "file": "024_js_security_4.js",
+    "line": 5,
+    "category": "security",
+    "issue_type": "Missing input length limit (potential DoS)",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 34028
+  },
+  {
+    "file": "024_js_security_4.js",
+    "line": 5,
+    "category": "maintainability",
+    "issue_type": "Missing input validation and sanitization documentation",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.75,
+    "processing_time_ms": 34028
+  },
+  {
+    "file": "024_js_security_4.js",
+    "line": 3,
+    "category": "maintainability",
+    "issue_type": "Missing function documentation",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 34028
+  },
+  {
+    "file": "024_js_security_4.js",
+    "line": 9,
+    "category": "maintainability",
+    "issue_type": "Missing error handling on server listen",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.75,
+    "processing_time_ms": 34028
+  },
+  {
+    "file": "024_js_security_4.js",
+    "line": 1,
+    "category": "maintainability",
+    "issue_type": "Missing application-level documentation",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.8,
+    "processing_time_ms": 34028
+  },
+  {
+    "file": "024_js_security_4.js",
+    "line": 9,
+    "category": "maintainability",
+    "issue_type": "Hardcoded magic number (port)",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.7,
+    "processing_time_ms": 34028
+  },
+  {
+    "file": "025_js_security_5.js",
+    "line": 6,
+    "category": "security",
+    "issue_type": "Server-Side Request Forgery (SSRF)",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 78319
+  },
+  {
+    "file": "025_js_security_5.js",
+    "line": 6,
+    "category": "security",
+    "issue_type": "Missing input validation \u2014 null/undefined URL passed to fetch",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 78319
+  },
+  {
+    "file": "025_js_security_5.js",
+    "line": 5,
+    "category": "performance",
+    "issue_type": "Unbounded concurrent requests to external service",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.94,
+    "processing_time_ms": 78319
+  },
+  {
+    "file": "025_js_security_5.js",
+    "line": 6,
+    "category": "performance",
+    "issue_type": "No timeout on fetch operation",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 78319
+  },
+  {
+    "file": "025_js_security_5.js",
+    "line": 7,
+    "category": "performance",
+    "issue_type": "No response size limit",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.92,
+    "processing_time_ms": 78319
+  },
+  {
+    "file": "025_js_security_5.js",
+    "line": 6,
+    "category": "maintainability",
+    "issue_type": "Missing error handling / try-catch",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 78319
+  },
+  {
+    "file": "025_js_security_5.js",
+    "line": 8,
+    "category": "maintainability",
+    "issue_type": "No response status code handling",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 78319
+  },
+  {
+    "file": "025_js_security_5.js",
+    "line": 9,
+    "category": "maintainability",
+    "issue_type": "Missing response content-type forwarding",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.8,
+    "processing_time_ms": 78319
+  },
+  {
+    "file": "025_js_security_5.js",
+    "line": 6,
+    "category": "maintainability",
+    "issue_type": "Missing function documentation",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 78319
+  },
+  {
+    "file": "025_js_security_5.js",
+    "line": 5,
+    "category": "security",
+    "issue_type": "Missing rate limiting on proxy endpoint",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.7,
+    "processing_time_ms": 78319
+  },
+  {
+    "file": "025_js_security_5.js",
+    "line": 11,
+    "category": "maintainability",
+    "issue_type": "Hardcoded port number",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.8,
+    "processing_time_ms": 78319
+  },
+  {
+    "file": "026_js_performance_1.js",
+    "line": 3,
+    "category": "performance",
+    "issue_type": "O(n\u00b2) nested loop with linear array search",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.98,
+    "processing_time_ms": 40510
+  },
+  {
+    "file": "026_js_performance_1.js",
+    "line": 6,
+    "category": "performance",
+    "issue_type": "Potential duplicate elements in result array",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 40510
+  },
+  {
+    "file": "026_js_performance_1.js",
+    "line": 1,
+    "category": "maintainability",
+    "issue_type": "Missing function documentation (JSDoc)",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 40510
+  },
+  {
+    "file": "026_js_performance_1.js",
+    "line": 1,
+    "category": "maintainability",
+    "issue_type": "No input validation / missing edge case handling",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.88,
+    "processing_time_ms": 40510
+  },
+  {
+    "file": "026_js_performance_1.js",
+    "line": 3,
+    "category": "security",
+    "issue_type": "Potential ReDoS / CPU exhaustion via large array inputs",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 40510
+  },
+  {
+    "file": "027_js_performance_2.js",
+    "line": 4,
+    "category": "performance",
+    "issue_type": "Sequential network requests in loop (no-await-in-loop)",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 0.99,
+    "processing_time_ms": 67956
+  },
+  {
+    "file": "027_js_performance_2.js",
+    "line": 1,
+    "category": "security",
+    "issue_type": "Missing input validation \u2014 URL injection risk",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.88,
+    "processing_time_ms": 67956
+  },
+  {
+    "file": "027_js_performance_2.js",
+    "line": 5,
+    "category": "security",
+    "issue_type": "Missing HTTP response status check before JSON parsing",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 67956
+  },
+  {
+    "file": "027_js_performance_2.js",
+    "line": 5,
+    "category": "security",
+    "issue_type": "Missing request timeout \u2014 resource exhaustion / DoS risk",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.8,
+    "processing_time_ms": 67956
+  },
+  {
+    "file": "027_js_performance_2.js",
+    "line": 4,
+    "category": "security",
+    "issue_type": "No error handling \u2014 unhandled rejections crash caller",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 1.0,
+    "processing_time_ms": 67956
+  },
+  {
+    "file": "027_js_performance_2.js",
+    "line": 5,
+    "category": "maintainability",
+    "issue_type": "Hardcoded API base URL",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 67956
+  },
+  {
+    "file": "027_js_performance_2.js",
+    "line": 1,
+    "category": "maintainability",
+    "issue_type": "Missing JSDoc documentation and type annotations",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.92,
+    "processing_time_ms": 67956
+  },
+  {
+    "file": "027_js_performance_2.js",
+    "line": 1,
+    "category": "performance",
+    "issue_type": "No concurrency limit \u2014 potential server/rate-limit hammering",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 67956
+  },
+  {
+    "file": "028_js_performance_3.js",
+    "line": 4,
+    "category": "performance",
+    "issue_type": "String concatenation in loop (O(n\u00b2) complexity)",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 0.99,
+    "processing_time_ms": 28789
+  },
+  {
+    "file": "028_js_performance_3.js",
+    "line": 5,
+    "category": "maintainability",
+    "issue_type": "Trailing comma in output (unintended behavior / logic bug)",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 28789
+  },
+  {
+    "file": "028_js_performance_3.js",
+    "line": 1,
+    "category": "maintainability",
+    "issue_type": "Missing JSDoc documentation and type annotations",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 28789
+  },
+  {
+    "file": "028_js_performance_3.js",
+    "line": 1,
+    "category": "security",
+    "issue_type": "Missing input validation (potential DoS via large input)",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 28789
+  },
+  {
+    "file": "029_js_performance_4.js",
+    "line": 2,
+    "category": "performance",
+    "issue_type": "Unnecessary repeated sorting operations",
+    "severity": "high",
+    "agent": "synthesizer",
+    "confidence": 1.0,
+    "processing_time_ms": 43767
+  },
+  {
+    "file": "029_js_performance_4.js",
+    "line": 2,
+    "category": "performance",
+    "issue_type": "Inefficient chaining with multiple intermediate arrays",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 43767
+  },
+  {
+    "file": "029_js_performance_4.js",
+    "line": 7,
+    "category": "maintainability",
+    "issue_type": "Unclear / dead business logic in filter",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.85,
+    "processing_time_ms": 43767
+  },
+  {
+    "file": "029_js_performance_4.js",
+    "line": 1,
+    "category": "maintainability",
+    "issue_type": "Missing JSDoc documentation (purpose, params, return type)",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 43767
+  },
+  {
+    "file": "029_js_performance_4.js",
+    "line": 3,
+    "category": "security",
+    "issue_type": "Missing input validation \u2014 potential runtime TypeError on null/undefined name",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 43767
+  },
+  {
+    "file": "030_js_performance_5.js",
+    "line": 5,
+    "category": "performance",
+    "issue_type": "O(n\u00b2) nested loop - repeated filtering",
+    "severity": "critical",
+    "agent": "synthesizer",
+    "confidence": 1.0,
+    "processing_time_ms": 36094
+  },
+  {
+    "file": "030_js_performance_5.js",
+    "line": 1,
+    "category": "maintainability",
+    "issue_type": "Missing parameter validation",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.9,
+    "processing_time_ms": 36094
+  },
+  {
+    "file": "030_js_performance_5.js",
+    "line": 1,
+    "category": "maintainability",
+    "issue_type": "Missing JSDoc documentation",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.95,
+    "processing_time_ms": 36094
+  },
+  {
+    "file": "030_js_performance_5.js",
+    "line": 6,
+    "category": "security",
+    "issue_type": "Prototype pollution risk via unvalidated string keys",
+    "severity": "medium",
+    "agent": "synthesizer",
+    "confidence": 0.4,
+    "processing_time_ms": 36094
+  },
+  {
+    "file": "030_js_performance_5.js",
+    "line": 4,
+    "category": "maintainability",
+    "issue_type": "Generic variable name reduces readability",
+    "severity": "low",
+    "agent": "synthesizer",
+    "confidence": 0.65,
+    "processing_time_ms": 36094
+  }
+]

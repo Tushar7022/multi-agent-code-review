@@ -1,0 +1,212 @@
+[
+    {
+        "file": "001_CWE-020_author_1_py.py",
+        "line": 9,
+        "category": "security",
+        "issue_type": "Improper Input Validation",
+        "severity": "medium"
+    },
+    {
+        "file": "002_CWE-020_author_2_py.py",
+        "line": 8,
+        "category": "security",
+        "issue_type": "Improper Input Validation",
+        "severity": "medium"
+    },
+    {
+        "file": "003_CWE-020_codeql_1_py.py",
+        "line": 10,
+        "category": "security",
+        "issue_type": "Cross-Site Scripting",
+        "severity": "medium"
+    },
+    {
+        "file": "004_CWE-020_codeql_2_py.py",
+        "line": 15,
+        "category": "security",
+        "issue_type": "Unsafe Deserialization",
+        "severity": "critical"
+    },
+    {
+        "file": "005_CWE-020_codeql_3_py.py",
+        "line": 15,
+        "category": "security",
+        "issue_type": "Open Redirect",
+        "severity": "high"
+    },
+    {
+        "file": "006_CWE-020_codeql_4_py.py",
+        "line": 11,
+        "category": "security",
+        "issue_type": "Open Redirect",
+        "severity": "high"
+    },
+    {
+        "file": "007_CWE-022_author_1_py.py",
+        "line": 12,
+        "category": "security",
+        "issue_type": "Path Traversal",
+        "severity": "high"
+    },
+    {
+        "file": "008_CWE-022_author_2_py.py",
+        "line": 8,
+        "category": "security",
+        "issue_type": "Server-Side Request Forgery",
+        "severity": "high"
+    },
+    {
+        "file": "009_CWE-022_codeql_1_py.py",
+        "line": 11,
+        "category": "security",
+        "issue_type": "Path Traversal",
+        "severity": "high"
+    },
+    {
+        "file": "010_CWE-022_codeql_2_py.py",
+        "line": 9,
+        "category": "security",
+        "issue_type": "Path Traversal",
+        "severity": "high"
+    },
+    {
+        "file": "011_CWE-078_author_1_py.py",
+        "line": 8,
+        "category": "security",
+        "issue_type": "OS Command Injection",
+        "severity": "critical"
+    },
+    {
+        "file": "012_CWE-078_codeql_1_py.py",
+        "line": 12,
+        "category": "security",
+        "issue_type": "OS Command Injection",
+        "severity": "critical"
+    },
+    {
+        "file": "013_CWE-079_codeql_1_py.py",
+        "line": 12,
+        "category": "security",
+        "issue_type": "Cross-Site Scripting",
+        "severity": "high"
+    },
+    {
+        "file": "014_CWE-079_codeql_2_py.py",
+        "line": 10,
+        "category": "security",
+        "issue_type": "Cross-Site Scripting",
+        "severity": "high"
+    },
+    {
+        "file": "015_CWE-079_sonar_1_py.py",
+        "line": 11,
+        "category": "security",
+        "issue_type": "Cross-Site Scripting",
+        "severity": "high"
+    },
+    {
+        "file": "016_CWE-080_author_1_py.py",
+        "line": 10,
+        "category": "security",
+        "issue_type": "Cross-Site Scripting",
+        "severity": "high"
+    },
+    {
+        "file": "017_CWE-089_author_1_py.py",
+        "line": 14,
+        "category": "security",
+        "issue_type": "SQL Injection",
+        "severity": "critical"
+    },
+    {
+        "file": "018_CWE-089_codeql_1_py.py",
+        "line": 13,
+        "category": "security",
+        "issue_type": "SQL Injection",
+        "severity": "critical"
+    },
+    {
+        "file": "019_CWE-090_codeql_1_py.py",
+        "line": 19,
+        "category": "security",
+        "issue_type": "LDAP Injection",
+        "severity": "high"
+    },
+    {
+        "file": "020_CWE-090_codeql_2_py.py",
+        "line": 19,
+        "category": "security",
+        "issue_type": "LDAP Injection",
+        "severity": "high"
+    },
+    {
+        "file": "021_js_security_1.js",
+        "line": 6,
+        "category": "security",
+        "issue_type": "SQL Injection",
+        "severity": "critical"
+    },
+    {
+        "file": "022_js_security_2.js",
+        "line": 7,
+        "category": "security",
+        "issue_type": "OS Command Injection",
+        "severity": "critical"
+    },
+    {
+        "file": "023_js_security_3.js",
+        "line": 8,
+        "category": "security",
+        "issue_type": "Path Traversal",
+        "severity": "high"
+    },
+    {
+        "file": "024_js_security_4.js",
+        "line": 6,
+        "category": "security",
+        "issue_type": "Cross-Site Scripting",
+        "severity": "high"
+    },
+    {
+        "file": "025_js_security_5.js",
+        "line": 7,
+        "category": "security",
+        "issue_type": "Server-Side Request Forgery",
+        "severity": "critical"
+    },
+    {
+        "file": "026_js_performance_1.js",
+        "line": 4,
+        "category": "performance",
+        "issue_type": "O(n²) Nested Loop",
+        "severity": "medium"
+    },
+    {
+        "file": "027_js_performance_2.js",
+        "line": 4,
+        "category": "performance",
+        "issue_type": "Await Inside Loop",
+        "severity": "high"
+    },
+    {
+        "file": "028_js_performance_3.js",
+        "line": 4,
+        "category": "performance",
+        "issue_type": "Inefficient String Concatenation in Loop",
+        "severity": "medium"
+    },
+    {
+        "file": "029_js_performance_4.js",
+        "line": 2,
+        "category": "performance",
+        "issue_type": "Redundant Repeated Sorting",
+        "severity": "medium"
+    },
+    {
+        "file": "030_js_performance_5.js",
+        "line": 6,
+        "category": "performance",
+        "issue_type": "Repeated Full-Array Scan in Loop",
+        "severity": "high"
+    }
+]
