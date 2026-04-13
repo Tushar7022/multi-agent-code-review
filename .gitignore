@@ -1,0 +1,44 @@
+# Environment
+.env
+.env.*
+
+# Python
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.ruff_cache/
+**/.ruff_cache/
+.mypy_cache/
+
+# Node
+node_modules/
+**/node_modules/
+.npm/
+
+# Vite
+frontend/dist/
+frontend/.vite/
+
+# Temp files (tool_runner writes these)
+*.tmp
+/tmp/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
