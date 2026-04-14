@@ -36,9 +36,6 @@ export default function IssueCard({ issue, index }: Props) {
                                 {issue.agent_agreement.length} agents agree
                             </span>
                         )}
-                        <span className="text-[11px] font-medium px-2 py-0.5 rounded-full bg-slate-50 text-slate-400 border border-slate-100">
-                            {Math.round(issue.confidence * 100)}% confidence
-                        </span>
                     </div>
 
                     {/* Issue type + location */}

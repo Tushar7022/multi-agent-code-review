@@ -151,6 +151,9 @@ export default function ProgressPanel({ request, onReset, onDone }: Props) {
                 setFinalIssues(evt.issues)
                 setSummary(evt.summary)
                 setFixedCode(evt.fixed_code ?? '')
+                setSecurityIssues([])
+                setPerfIssues([])
+                setMaintIssues([])
                 setSteps(s => updateStep(s, 'synthesizer', {
                     status: 'done',
                     detail: `${evt.issues.length} total issues`,
@@ -169,7 +172,7 @@ export default function ProgressPanel({ request, onReset, onDone }: Props) {
     // issues to show during streaming — pre-synthesis per-agent results
     const streamingIssues = [...securityIssues, ...perfIssues, ...maintIssues]
     // after synthesis — use final merged list
-    const displayIssues = phase === 'done' && finalIssues.length > 0 ? finalIssues : streamingIssues
+    const displayIssues = finalIssues.length > 0 ? finalIssues : streamingIssues
 
     const criticalCount = displayIssues.filter(i => i.severity === 'critical').length
     const highCount = displayIssues.filter(i => i.severity === 'high').length
@@ -333,7 +336,7 @@ export default function ProgressPanel({ request, onReset, onDone }: Props) {
                         return (
                             <div key={severity} className="flex flex-col gap-2">
                                 {group.map((issue, idx) => (
-                                    <div key={`${issue.file}-${issue.line}-${issue.issue_type}`} className="animate-fade-in-up" style={{ animationDelay: `${idx * 40}ms` }}>
+                                    <div key={idx} className="animate-fade-in-up" style={{ animationDelay: `${idx * 40}ms` }}>
                                         <IssueCard issue={issue} index={idx} />
                                     </div>
                                 ))}

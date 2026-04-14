@@ -240,7 +240,7 @@ Contains system prompts for all agents as string constants:
 - `SECURITY_PROMPT` — security-focused reviewer; given Semgrep + Bandit output + source code; reasons step by step; verifies true/false positives; finds false negatives; returns JSON array of issues
 - `PERFORMANCE_PROMPT` — same structure, focused on scalability, slow algorithms, inefficient patterns
 - `MAINTAINABILITY_PROMPT` — same structure, focused on readability, structure, complexity, naming
-- `SYNTHESIZER_PROMPT` — merges findings from all three agents; deduplicates (same file+line+category); resolves severity conflicts (keep highest); assigns confidence scores; identifies cross-domain linkages; generates `fixed_code`; returns JSON object with `issues`, `summary`, `fixed_code`
+- `SYNTHESIZER_PROMPT` — merges findings from all three agents using an **index-based approach**: the LLM receives a numbered list of all issues (stripped to key fields) and returns `merged_issues` (groups of issue indices with cross-domain notes), `new_issues` (issues the synthesizer itself discovers), `summary`, and `fixed_code`; Python code then reconstructs full Issue objects from the index references
 
 ### `server/agents/security_agent.py` / `performance_agent.py` / `maintainability_agent.py`
 All three follow the same pattern:
@@ -256,16 +256,17 @@ All three follow the same pattern:
 
 ### `server/agents/synthesizer_agent.py`
 - LangGraph node function: `def synthesizer_agent(state: AgentState) -> dict`
-- Collects all three agent outputs from state
+- Collects all three agent outputs from state and builds an **indexed flat array** of all issues (stripped to: index, agent, category, issue_type, severity, file, line, suggested_fix) to reduce token usage
 - Calls Claude Sonnet API with `SYNTHESIZER_PROMPT` (`max_tokens=8096`)
 - Retry logic: up to 3 attempts with exponential backoff (2s, 4s, 8s) on failure
 - Fallback: if all retries fail, returns raw agent outputs merged without deduplication
-- Steps performed by the LLM:
-  1. Deduplication: remove issues where file + line + category are identical
-  2. Severity conflict resolution: keep highest when duplicates have different severity
-  3. Confidence scoring: 1.0 if all 3 agents agree, 0.5 for solo agent finding
-  4. Cross-domain linking: identifies when one domain issue causes another
-  5. Code fixing: generates corrected version of the input code with all fixes applied
+- LLM returns JSON with shape `{"merged_issues": [...], "new_issues": [...], "summary": "...", "fixed_code": "..."}`
+  - `merged_issues`: each entry has `indices` (pointing back to the flat array), `issue_type`, `severity`, `category`, `cross_domain_notes`
+  - `new_issues`: issues Sonnet itself discovers, with full fields
+- Two Python helper functions reconstruct final Issue objects:
+  - `_reconstruct_issues()` — pulls original Issue objects by index, derives `confidence` (1.0 = all 3 agents, 0.67 = 2 agents, 0.33 = 1 agent) and `agent_agreement` from which agents had matching indices
+  - `_parse_new_issues()` — converts new_issues dicts into Issue objects with `agent="synthesizer"`
+- Uses `json_repair` as fallback for malformed LLM JSON
 - Returns `{"final_issues": [...], "summary": "...", "fixed_code": "..."}`
 
 ---
@@ -292,7 +293,6 @@ semgrep
 bandit
 ruff
 json-repair
-supabase
 ```
 
 ---
@@ -307,8 +307,8 @@ Two-screen UI driven by the SSE stream:
 Components:
 - `Header.tsx` — status bar showing `ready` / `running` / `done`
 - `CodeInput.tsx` — code textarea + submit
-- `ProgressPanel.tsx` — SSE consumer; renders live agent progress
-- `IssueCard.tsx` — shows: agent badge, severity badge, issue_type, file:line, evidence, llm_reasoning, suggested_fix, confidence, cross_domain_notes
+- `ProgressPanel.tsx` — SSE consumer; renders live agent progress; clears per-agent issue lists once `synthesis_done` fires and displays final merged issues immediately on arrival
+- `IssueCard.tsx` — shows: agent badge, severity badge, issue_type, file:line, evidence, llm_reasoning, suggested_fix, cross_domain_notes
 - `SeverityBadge.tsx` — colored badge: Critical=red, High=orange, Medium=yellow, Low=gray
 - `AgentBadge.tsx` — colored badge per agent type
 - `SummaryCard.tsx` — renders synthesizer summary text

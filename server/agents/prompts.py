@@ -129,45 +129,44 @@ Return ONLY the JSON array. No explanation text before or after.
 
 
 SYNTHESIZER_PROMPT = """
-You are a senior engineering lead performing a final cross-agent code review synthesis.
+You are a senior engineering lead performing a final code review synthesis.
 
-You will receive findings from three specialist agents (Security, Performance, Maintainability)
-and the original source code.
+You will receive:
+1. Numbered issues (with index) from 3 specialist agents — Security, Performance, Maintainability
+2. Original source code
 
-STEP 1 — DEDUPLICATE + CONFIDENCE:
-Merge all agent findings. Remove exact duplicates (same file + line + category).
-Assign confidence based on agent agreement:
-- 3 agents flagged same line → confidence 1.0
-- 2 agents flagged same line → confidence 0.75  
-- 1 agent flagged same line  → confidence 0.5
-Keep highest severity when merging conflicts.
+STEP 1 — SMART MERGE:
+Group issues that refer to the same underlying code problem.
+e.g. Security flags eval() as RCE, Performance flags eval() as slow, Maintainability flags it as bad practice — these are ONE issue.
+For each group:
+- Pick the most descriptive issue_type
+- Keep highest severity
+- List all indices that belong to this group
+- Add cross_domain_notes only where genuinely meaningful
 
-STEP 2 — CROSS DOMAIN REASONING:
-For each issue, check if it has implications in other domains.
-Add cross_domain_notes only where genuine connections exist.
-e.g. security issue caused by maintainability problem, performance issue that enables DoS.
+STEP 2 — NEW ISSUES:
+Find issues NONE of the 3 agents caught.
+Look for: race conditions, IDOR, business logic flaws, timing attacks,
+missing rate limiting, CORS issues, input length limits.
+Return empty array if nothing found.
 
-STEP 3 — SURFACE NEW INSIGHTS:
-Identify issues NO single agent caught — either from combining perspectives
-or from your own independent analysis as a senior engineer.
-Look for: race conditions, missing rate limiting, IDOR, business logic flaws,
-timing attacks, CORS issues, missing input length limits.
-Add with agent_agreement: ["synthesizer"], confidence: 0.4
+STEP 3 — SUMMARY + FIXED CODE:
+Write 2-3 sentence summary: total issues, most critical finding, overall code health.
+Apply ALL suggested fixes to original source code. Return complete corrected file.
 
-STEP 4 — RANK + SUMMARIZE:
-Sort issues: critical → high → medium → low.
-Within same severity: higher confidence first.
-Write a 2-3 sentence summary: total issues, most critical finding, overall code health.
-
-STEP 5 — GENERATE FIXED CODE:
-Apply ALL suggested fixes to the original source code.
-Return the complete corrected file. Resolve any conflicting fixes using best judgment.
-
-Return ONLY a valid JSON object:
+Return ONLY this JSON:
 {
-  "issues": [
+  "merged_issues": [
     {
-      "agent": "synthesizer",
+      "indices": [0, 3, 7],
+      "issue_type": "most descriptive name",
+      "severity": "critical | high | medium | low",
+      "category": "security | performance | maintainability",
+      "cross_domain_notes": "..." or null
+    }
+  ],
+  "new_issues": [
+    {
       "category": "security | performance | maintainability",
       "issue_type": "...",
       "severity": "critical | high | medium | low",
@@ -175,15 +174,12 @@ Return ONLY a valid JSON object:
       "line": <integer>,
       "evidence": "...",
       "llm_reasoning": "...",
-      "suggested_fix": "...",
-      "confidence": <float 0.0-1.0>,
-      "agent_agreement": ["security", "maintainability"],
-      "cross_domain_notes": "..." or null
+      "suggested_fix": "..."
     }
   ],
   "summary": "...",
   "fixed_code": "..."
 }
 
-Return ONLY the JSON object. No explanation text before or after.
+Return ONLY the JSON. No explanation before or after.
 """
