@@ -1,6 +1,7 @@
 import time
 import uuid
 import logging
+import json
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
@@ -10,6 +11,8 @@ from language_detector import detect_language
 from tool_runner import run_tools
 from output_normalizer import normalize
 from agents.graph import review_graph
+from fastapi.responses import StreamingResponse
+import asyncio
 
 load_dotenv()
 
@@ -97,4 +100,95 @@ def review_code(request: ReviewRequest):
         summary=result.get("summary", ""),
         fixed_code=result.get("fixed_code", request.code),
         processing_time_ms=processing_time,
+    )
+
+@app.post("/stream")
+async def stream_review(request: ReviewRequest):
+    async def event_generator():
+        # step 1 — detect language
+        language = request.language or detect_language(request.code, request.filename)
+        yield f"data: {json.dumps({'event': 'language', 'language': language})}\n\n"
+
+        # step 2 — run tools
+        try:
+            tool_outputs = run_tools(request.code, language, request.filename)
+        except Exception as e:
+            logger.error(f"Tool runner failed: {e}")
+            tool_outputs = {"semgrep": [], "bandit": [], "ruff": [], "eslint": []}
+
+        normalized = normalize(tool_outputs, request.filename)
+        yield f"data: {json.dumps({'event': 'tools_done'})}\n\n"
+
+        # step 3 — run LangGraph pipeline with streaming
+        initial_state = {
+            "code":                     request.code,
+            "language":                 language,
+            "filename":                 request.filename,
+            "tool_outputs":             tool_outputs,
+            "security_findings":        normalized["security_findings"],
+            "performance_findings":     normalized["performance_findings"],
+            "maintainability_findings": normalized["maintainability_findings"],
+            "security_issues":          [],
+            "performance_issues":       [],
+            "maintainability_issues":   [],
+            "final_issues":             [],
+            "summary":                  "",
+            "fixed_code": "", 
+        }
+
+        loop = asyncio.get_event_loop()
+
+        async def stream_chunks():
+            loop = asyncio.get_event_loop()
+            queue: asyncio.Queue = asyncio.Queue()
+
+            def run():
+                try:
+                    for chunk in review_graph.stream(initial_state):
+                        loop.call_soon_threadsafe(queue.put_nowait, chunk)
+                except Exception as e:
+                    loop.call_soon_threadsafe(queue.put_nowait, e)
+                finally:
+                    loop.call_soon_threadsafe(queue.put_nowait, None)  # sentinel
+
+            loop.run_in_executor(None, run)
+
+            while True:
+                chunk = await queue.get()
+                if chunk is None:
+                    break
+                if isinstance(chunk, Exception):
+                    raise chunk
+                yield chunk
+
+        async for chunk in stream_chunks():
+            node_name = list(chunk.keys())[0]
+
+            if node_name == "security":
+                issues = chunk["security"].get("security_issues", [])
+                yield f"data: {json.dumps({'event': 'security_done', 'issues': [i.model_dump() for i in issues]})}\n\n"
+
+            elif node_name == "performance":
+                issues = chunk["performance"].get("performance_issues", [])
+                yield f"data: {json.dumps({'event': 'performance_done', 'issues': [i.model_dump() for i in issues]})}\n\n"
+
+            elif node_name == "maintainability":
+                issues = chunk["maintainability"].get("maintainability_issues", [])
+                yield f"data: {json.dumps({'event': 'maintainability_done', 'issues': [i.model_dump() for i in issues]})}\n\n"
+
+            elif node_name == "synthesizer":
+                final_issues = chunk["synthesizer"].get("final_issues", [])
+                summary = chunk["synthesizer"].get("summary", "")
+                fixed_code = chunk["synthesizer"].get("fixed_code", request.code)
+                yield f"data: {json.dumps({'event': 'synthesis_done', 'issues': [i.model_dump() for i in final_issues], 'summary': summary, 'fixed_code': fixed_code})}\n\n"
+
+        yield f"data: {json.dumps({'event': 'done'})}\n\n"
+
+    return StreamingResponse(
+        event_generator(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "X-Accel-Buffering": "no",
+        }
     )

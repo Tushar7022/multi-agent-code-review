@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --brand: #6c63ff;
+        --brand-dark: #4e46e5;
+
+        /* Mesh background — light lavender + pale blue + white */
+        --bg-mesh: radial-gradient(ellipse at 0% 0%, rgba(224, 221, 255, 0.6) 0%, transparent 60%),
+            radial-gradient(ellipse at 100% 0%, rgba(199, 210, 254, 0.5) 0%, transparent 55%),
+            radial-gradient(ellipse at 50% 100%, rgba(221, 214, 254, 0.4) 0%, transparent 60%),
+            radial-gradient(ellipse at 80% 50%, rgba(186, 230, 253, 0.3) 0%, transparent 50%),
+            linear-gradient(160deg, #f5f4ff 0%, #f0f4ff 40%, #f4f7ff 70%, #f8f5ff 100%);
+    }
+
+    body {
+        font-family: 'DM Sans', system-ui, sans-serif;
+        @apply text-slate-900 antialiased;
+        background: var(--bg-mesh);
+        min-height: 100vh;
+    }
+
+    code,
+    pre,
+    kbd {
+        font-family: 'DM Mono', 'Fira Code', monospace;
+    }
+
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-slate-300 rounded-full;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--brand);
+    }
+}
+
+@layer utilities {
+    .font-mono {
+        font-family: 'DM Mono', 'Fira Code', monospace;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulseDot {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.35;
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.4s ease both;
+}
+
+.animate-pulse-dot {
+    animation: pulseDot 2s ease-in-out infinite;
+}
+
+.animate-pulse-dot-fast {
+    animation: pulseDot 0.8s ease-in-out infinite;
+}

@@ -23,8 +23,8 @@ node_modules/
 .npm/
 
 # Vite
-frontend/dist/
-frontend/.vite/
+client/dist/
+client/.vite/
 
 # Temp files (tool_runner writes these)
 *.tmp
@@ -39,6 +39,9 @@ frontend/.vite/
 # OS
 .DS_Store
 Thumbs.db
+
+# Evaluation outputs
+evaluation/predictions.json
 
 # Logs
 *.log
