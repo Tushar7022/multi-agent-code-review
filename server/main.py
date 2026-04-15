@@ -1,3 +1,4 @@
+import os
 import time
 import uuid
 import logging
@@ -21,10 +22,12 @@ logger = logging.getLogger(__name__)
 
 app = FastAPI(title="Multi-Agent Code Review System")
 
-# allow React dev server to talk to FastAPI
+# FRONTEND_URL env var controls allowed origins.
+# Defaults to localhost for local dev; set it on Render to your frontend URL.
+_frontend_url = os.getenv("FRONTEND_URL", "http://localhost:5173")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # Vite default port
+    allow_origins=[_frontend_url],
     allow_methods=["*"],
     allow_headers=["*"],
 )

@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: multiagent-code-review-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: cd server && uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false          # you'll paste this manually in the Render dashboard
+      - key: FRONTEND_URL
+        sync: false          # set this after you deploy the frontend
+    healthCheckPath: /health
