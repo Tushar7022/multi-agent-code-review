@@ -50,7 +50,8 @@ export default function ProgressPanel({ request, onReset, onDone }: Props) {
 
         async function startStream() {
             try {
-                const res = await fetch('/stream', {
+                const base = import.meta.env.VITE_API_URL ?? ''
+                const res = await fetch(`${base}/stream`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(request),
