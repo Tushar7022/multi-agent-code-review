@@ -4,6 +4,7 @@ from anthropic import Anthropic
 from agents.state import AgentState
 from agents.prompts import MAINTAINABILITY_PROMPT
 from models import Issue
+from json_repair import repair_json
 
 logger = logging.getLogger(__name__)
 
@@ -67,7 +68,7 @@ def _call_llm(user_message: str, filename: str) -> list[Issue]:
     start = raw.find("[")
     end = raw.rfind("]")
     if start == -1 or end == -1:
-        logger.warning("Security agent: no JSON array found in response")
+        logger.warning("Maintainability agent: no JSON array found in response")
         return []
     raw = raw[start:end+1]
 
